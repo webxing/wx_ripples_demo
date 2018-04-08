@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "赛事发布",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#de501e",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "tab1",
+        "iconPath": "img/agree.png",
+        "selectedIconPath": "img/agree-a.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "tab2",
+        "iconPath": "img/agree.png",
+        "selectedIconPath": "img/agree-a.png"
+      }
+    ]
+  }
+}

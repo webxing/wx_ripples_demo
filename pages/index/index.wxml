@@ -1,0 +1,43 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <view class="con-wrap ripple {{cardRightIn?'flipInY':''}} {{cardLeftIn?'fadeInLeft':''}}"  wx:for="{{list}}" wx:if="{{index==currentIndex}}" wx:key="{{item._id}}" >
+  <view class='card-box' bindtouchstart="touchstart" bindtouchmove="touchmove" data-index="{{index}}">
+    <image wx:if="{{item.cover}}" class="card-img" style="background-image:url('{{item.cover}}')"></image>
+    <view class='card-title'>{{item.title}}</view> 
+    <view class='card-time'>{{item.time}}</view>           
+    <view class="card-con-wrap">
+      <view class='card-con-left'>
+        <view class='card-author'>{{item.author}}</view>               
+        <view class='card-tag'>{{item.tag}}</view>
+        <view class='card-fromNow'>{{item.fromNow}}</view>
+      </view>
+      <view class='card-con-right'>
+        <view class='card-agree'  catchtap='toAgree' data-id='{{item._id}}'>
+          <image src="/img/{{item.agree?'agree-a.png':'agree.png'}}" class="ripple {{item.agree?'rubberBand':''}}"></image> 
+          <text>{{item.agreeNum}}</text> 
+        </view>  
+        <view class='card-comment' catchtap='toComment'>
+          <image src='/img/comment.png'></image> 
+          <text>{{item.commentNum}}</text> 
+        </view>            
+      </view>
+    </view>
+  </view>
+  <view class='comment'>
+    <view class='comment-title'>最新评论</view>
+    <block  wx:if="{{item.comment.length}}">
+      <view wx:for="{{item.comment}}" class='comment-list' wx:key="{{item.logo}}">
+        <image class='comment-logo' src="{{item.logo}}"></image> 
+        <view class='comment-con'>
+          <view class='comment-name'>{{item.name}}</view> 
+          <view class='comment-fromNow'>{{item.fromNow}}</view> 
+          <view class='comment-txt'>{{item.txt}}</view>
+        </view>
+      </view>
+    </block>
+    <view wx:else class='comment-no'>
+      <text>暂无评论</text>
+    </view>
+  </view>
+  </view>
+</view>

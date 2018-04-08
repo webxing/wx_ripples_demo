@@ -1,0 +1,12 @@
+/**app.wxss**/
+@import '/utils/ripples.min.wxss';
+.card-box {
+  width: 94vw; 
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 5px;
+  border:1px solid #eee;
+  padding-bottom: 20px;
+  box-shadow: 0 0 24rpx 0 rgba(0, 0, 0, 0.06), 0 1rpx 0 0 rgba(0, 0, 0, 0.02); 
+}
+

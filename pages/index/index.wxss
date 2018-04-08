@@ -1,0 +1,113 @@
+/* pages/index/index.wxss */
+.container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.con-wrap{
+  min-height: 100vh;  
+}
+.card-box .card-img{
+  width:100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.card-box .card-title {
+  padding: 20rpx;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+.card-box .card-time {
+  padding: 0 20rpx 40rpx 20rpx;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+.card-author,.card-tag,.card-fromNow{
+  margin-left: 20rpx;
+  font-size: 12px;
+  height: 12px;
+  line-height: 12px;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+.card-box .card-author{ background: #FA454C;}
+.card-box .card-tag{ background: #9C2DFE; }
+.card-box .card-fromNow{ background: #F89B2D;}
+/* .card-box .card-fromNow{ background: #C26C46;} */
+.card-con-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-con-left,.card-con-right{
+  display: flex;
+}
+.card-con-right image{
+  width: 26px;
+  height: 26px;
+  margin-left: 20rpx;
+}
+.card-con-right text{
+  font-size: 14px;
+  color: #999;
+}
+.card-con-right image{
+  padding-right: 3px;
+}
+.card-con-right .card-agree, .card-comment{
+  display: flex;
+  align-items: center;
+}
+.card-con-right .card-comment{
+  margin-right: 20rpx;
+}
+
+
+
+/* 评论 */
+.comment{
+   width: 94vw;
+}
+.comment-title{
+  color: #444;
+  font-size: 16px;
+  padding: 20rpx 0 5rpx 0;
+  display: inline-block;
+  border-bottom: 2px solid orangered;
+}
+.comment-list{
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
+}
+.comment-list .comment-logo{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: block;
+}
+.comment-con .comment-name{
+  color: #666;
+  font-size: 14px;
+}
+.comment-con .comment-fromNow{
+  color: #999;
+  font-size: 12px;
+}
+.comment-con .comment-txt{
+  font-size: 16px;
+  margin-top: 10rpx;
+  color: #333;
+  width: 72vw; 
+}
+.comment-no{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
