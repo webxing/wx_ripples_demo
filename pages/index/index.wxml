@@ -12,7 +12,7 @@
         <view class='card-fromNow'>{{item.fromNow}}</view>
       </view>
       <view class='card-con-right'>
-        <view class='card-agree'  catchtap='toAgree' data-id='{{item._id}}'>
+        <view class='card-agree'  catchtouchend='toAgree' data-id='{{item._id}}'>
           <image src="/img/{{item.agree?'agree-a.png':'agree.png'}}" class="ripple {{item.agree?'rubberBand':''}}"></image> 
           <text>{{item.agreeNum}}</text> 
         </view>  
